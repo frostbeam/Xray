@@ -1,4 +1,3 @@
-rm -rf update
 NC='\e[0m'
 DEFBOLD='\e[39;1m'
 RB='\e[31;1m'
