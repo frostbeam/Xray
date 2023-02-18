@@ -115,5 +115,5 @@ apt update && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
 ```
               
 ```
-wget -q -O xray https://raw.githubusercontent.com/arismaramar/Xray/main/ken.sh && chmod +x ken && ./ken
+wget -q -O xray https://raw.githubusercontent.com/kenDevXD/Xray/main/ken.sh && chmod +x ken && ./ken
 ```
