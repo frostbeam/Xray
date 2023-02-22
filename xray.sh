@@ -1,3 +1,5 @@
+#!/bin/bash
+
 rm -rf xray
 clear
 # ANSI Escape Code
