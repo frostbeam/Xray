@@ -1,118 +1,39 @@
-<li><code>Note !!!  menu script sudah bwanaan Xray-core mod  ( support all/multipath) menu xray official tidak support all/multipath </code></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>SERVICE</th>
-<th>NETWORK PORT</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Vmess WS TLS (All/multipath)</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Vless WS TLS</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Trojan WS TLS</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Socks5 WS TLS</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Shadowsocks WS TLS (aes-256-gcm)</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Shadowsocks 2022 WS TLS (2022-blake3-aes-256-gcm)</td>
-<td>443</td>
-</tr>
+# Xray
+# Xray Autoscript
+- `Update !!! Add DNS Setting`
+- `Note !!! for multipath please change to Xray-core mod in menu script`
 
-<tr>
-<td>Vmess WS (All/multipath)</td>
-<td>80</td>
-</tr>
-<tr>
-<td>Vless WS</td>
-<td>80</td>
-</tr>
-<tr>
-<td>Trojan WS</td>
-<td>80</td>
-</tr>
-<tr>
-<td>Socks5 WS</td>
-<td>80</td>
-</tr>
-<tr>
-<td>Shadowsocks WS (aes-256-gcm)</td>
-<td>80</td>
-</tr>
-<tr>
-<td>Shadowsocks 2022 WS (2022-blake3-aes-256-gcm)</td>
-<td>80</td>
-</tr>
-<tr>
-<td>Vmess gRPC</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Vless gRPC</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Trojan gRPC</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Socks5 gRPC</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Shadowsocks gRPC (aes-256-gcm)</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Shadowsocks 2022 gRPC (2022-blake3-aes-256-gcm)</td>
-<td>443</td>
-</tr>
-<tr>
-<td>Nginx Webserver</td>
-<td>8000</td>
-</tr>
-<tr>
-<td>Auto Delete Expired Account</td>
-<td><g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th>ALTERNATIF PORT</th>
-<th>NETWORK PORT</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HTTPS</td>
-<td>2053, 2083, 2087, 2096, 8443</td>
-</tr>
-<tr>
-<td>HTTP</td>
-<td>8080, 8880, 2052, 2082, 2086, 2095</td>
-</tr>
-</tbody>
+|  SERVICE  |  NETWORK PORT  |
+|---------- |--------|
+| Vmess WS TLS (multipath)  | 443 |
+| Vless WS TLS  | 443 |
+| Trojan WS TLS  | 443 |
+| Socks5 WS TLS  | 443 |
+| Shadowsocks WS TLS (aes-256-gcm)  | 443 |
+| Shadowsocks 2022 WS TLS (2022-blake3-aes-256-gcm)  | 443 |
+| Vmess WS (multipath)  | 80 |
+| Vless WS  | 80 |
+| Trojan WS  | 80 |
+| Socks5 WS  | 80 |
+| Shadowsocks WS (aes-256-gcm)  | 80 |
+| Shadowsocks 2022 WS (2022-blake3-aes-256-gcm)  | 80 |
+| Vmess gRPC  | 443 |
+| Vless gRPC  | 443 |
+| Trojan gRPC  | 443 |
+| Socks5 gRPC  | 443 |
+| Shadowsocks gRPC (aes-256-gcm)  | 443 |
+| Shadowsocks 2022 gRPC (2022-blake3-aes-256-gcm)  | 443 |
+| Nginx Webserver | 8000 |
+| Auto Delete Expired Account | ✅ |
+| DNS Setting | ✅ |
 
-```
-apt update && apt upgrade -y --fix-missing && update-grub && sleep 2 && reboot
-```
-              
-```
-wget -q -O xray https://raw.githubusercontent.com/kenDevXD/Xray/main/ken.sh && chmod +x ken && ./ken
-```
+|  ALTERNATIF PORT  |  NETWORK PORT  |
+|-------------------|--------|
+| HTTPS  | 2053, 2083, 2087, 2096, 8443 |
+| HTTP  | 8080, 8880, 2052, 2082, 2086, 2095 |
+
+|        Link         |  Command  |
+|---------------------|-------------------|
+| via WGET | `bash -c "$(wget -qO- https://raw.githubusercontent.com/kenDevXD/Xray/main/xray)"` |
+| via CURL | `bash -c "$(curl -fsSL https://raw.githubusercontent.com/kenDevXD/Xray/main/xray)"` |
+
