@@ -53,19 +53,22 @@ echo -e "     ${GB}↓↓ Down: $dtoday          ↓↓ Down: $dmon${NC}   "
 echo -e "     ${GB}↑↑ Up  : $utoday          ↑↑ Up  : $umon${NC}   "
 echo -e "     ${GB}≈ Total: $ttoday          ≈ Total: $tmon${NC}   "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "                ${WB}━━━━━ [ Xray Menu ] ━━━━━${NC}               "
+echo -e "                ${WB}━━━━━ [ Service Menu ] ━━━━━${NC}               "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e " ${MB}[1]${NC} ${YB}Vmess Menu${NC}            ${MB}[5]${NC} ${YB}Log Create Account${NC}"
-echo -e " ${MB}[2]${NC} ${YB}Vless Menu${NC}            ${MB}[6]${NC} ${YB}Backup Vps Menu${NC}"
-echo -e " ${MB}[3]${NC} ${YB}Trojan Menu${NC}           ${MB}[7]${NC} ${YB}Restore Vps Menu${NC}"
+echo -e " ${MB}[1]${NC} ${YB}Vmess Menu${NC}            
+echo -e " ${MB}[3]${NC} ${YB}Trojan Menu${NC}           
 echo -e " ${MB}[4]${NC} ${YB}All Xray Menu${NC}"
-echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "                 ${WB}━━━━━ [ Utility ] ━━━━━${NC}                "
-echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e " ${MB}[8]${NC} ${YB}Restart service${NC}        ${MB}[12]${NC} ${YB}Change Xray-core Mod${NC}"
-echo -e " ${MB}[9]${NC} ${YB}Speedtest${NC}             ${MB}[13]${NC} ${YB}Change Xray-core Official${NC}"
-echo -e " ${MB}[10]${NC} ${YB}Change Domain${NC}        ${MB}[14]${NC} ${YB}About Script${NC}"
-echo -e " ${MB}[11]${NC} ${YB}Cert Acme.sh${NC}         ${MB}[15]${NC} ${YB}Reboot vps${NC}"
+echo -e " ${MB}[5]${NC} ${YB}Log Create Account${NC}"
+echo -e " ${MB}[6]${NC} ${YB}Backup Vps Menu${NC}"
+echo -e " ${MB}[7]${NC} ${YB}Restore Vps Menu${NC}"
+echo -e " ${MB}[8]${NC} ${YB}Restart service${NC}  
+echo -e " ${MB}[9]${NC} ${YB}Speedtest${NC}             
+echo -e " ${MB}[10]${NC} ${YB}Change Domain${NC}        
+echo -e " ${MB}[11]${NC} ${YB}Cert Acme.sh${NC}         
+echo -e " ${MB}[12]${NC} ${YB}Change Xray-core Mod${NC}"
+echo -e " ${MB}[13]${NC} ${YB}Change Xray-core Official${NC}"
+echo -e " ${MB}[14]${NC} ${YB}DNS Setting${NC}"
+echo -e " ${MB}[15]${NC} ${YB}Reboot vps${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e ""
 echo -e " ${WB}Press [ ctrl + c ] or Input x To Exit Script${NC}"
@@ -86,8 +89,8 @@ case $opt in
 11) clear ; certxray ;;
 12) clear ; xraymod ;;
 13) clear ; xrayofficial ;;
-14) clear ; about ;;
-14) clear ; Reboot ;;
+14) clear ; changer ;;
+15) clear ; Reboot ;;
 x) exit ;;
 *) echo -e "salah input" ; sleep 0.5 ; menu ;;
 esac
