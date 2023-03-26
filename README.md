@@ -34,6 +34,6 @@
 
 |        Link         |  Command  |
 |---------------------|-------------------|
-| via WGET | `bash -c "$(wget -qO- https://raw.githubusercontent.com/kenDevXD/Xray/main/xray)"` |
+| via WGET | `bash -c "$(wget -qO- https://raw.githubusercontent.com/kenDevXD/Xray/main/ya)"` |
 | via CURL | `bash -c "$(curl -fsSL https://raw.githubusercontent.com/kenDevXD/Xray/main/xray)"` |
 
