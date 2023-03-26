@@ -1,5 +1,3 @@
-# Xray
-# Xray Autoscript
 - `Update !!! Add DNS Setting`
 - `Note !!! for multipath please change to Xray-core mod in menu script`
 
