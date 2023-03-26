@@ -53,25 +53,21 @@ echo -e "     ${GB}↓↓ Down: $dtoday          ↓↓ Down: $dmon${NC}   "
 echo -e "     ${GB}↑↑ Up  : $utoday          ↑↑ Up  : $umon${NC}   "
 echo -e "     ${GB}≈ Total: $ttoday          ≈ Total: $tmon${NC}   "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e "                ${WB}━━━━━ [ Service Menu ] ━━━━━${NC}               "
+echo -e "                ${WB}----- [ Xray Menu ] -----${NC}               "
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e " ${MB}[1]${NC} ${YB}Vmess Menu${NC}            
-echo -e " ${MB}[3]${NC} ${YB}Trojan Menu${NC}           
-echo -e " ${MB}[4]${NC} ${YB}All Xray Menu${NC}"
-echo -e " ${MB}[5]${NC} ${YB}Log Create Account${NC}"
-echo -e " ${MB}[6]${NC} ${YB}Backup Vps Menu${NC}"
-echo -e " ${MB}[7]${NC} ${YB}Restore Vps Menu${NC}"
-echo -e " ${MB}[8]${NC} ${YB}Restart service${NC}  
-echo -e " ${MB}[9]${NC} ${YB}Speedtest${NC}             
-echo -e " ${MB}[10]${NC} ${YB}Change Domain${NC}        
-echo -e " ${MB}[11]${NC} ${YB}Cert Acme.sh${NC}         
-echo -e " ${MB}[12]${NC} ${YB}Change Xray-core Mod${NC}"
-echo -e " ${MB}[13]${NC} ${YB}Change Xray-core Official${NC}"
-echo -e " ${MB}[14]${NC} ${YB}DNS Setting${NC}"
-echo -e " ${MB}[15]${NC} ${YB}Reboot vps${NC}"
+echo -e " ${MB}[1]${NC} ${YB}Vmess Menu${NC}          ${MB}[5]${NC} ${YB}Shadowsocks 2022 Menu${NC}"
+echo -e " ${MB}[2]${NC} ${YB}Vless Menu${NC}          ${MB}[6]${NC} ${YB}Socks5 Menu${NC}"
+echo -e " ${MB}[3]${NC} ${YB}Trojan Menu${NC}         ${MB}[7]${NC} ${YB}All Xray Menu${NC}"
+echo -e " ${MB}[4]${NC} ${YB}Shadowsocks Menu${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
-echo -e ""
-echo -e " ${WB}Press [ ctrl + c ] or Input x To Exit Script${NC}"
+echo -e "                 ${WB}----- [ Utility ] -----${NC}                "
+echo -e "${BB}————————————————————————————————————————————————————————${NC}"
+echo -e " ${MB}[8]${NC} ${YB}Log Create Account${NC}  ${MB}[13]${NC} ${YB}DNS Setting${NC}"
+echo -e " ${MB}[9]${NC} ${YB}Speedtest${NC}           ${MB}[14]${NC} ${YB}Check DNS Status${NC}"
+echo -e " ${MB}[10]${NC} ${YB}Change Domain${NC}      ${MB}[15]${NC} ${YB}Change Xray-core Mod${NC}"
+echo -e " ${MB}[11]${NC} ${YB}Cert Acme.sh${NC}       ${MB}[16]${NC} ${YB}Change Xray-core Official${NC}"
+echo -e " ${MB}[12]${NC} ${YB}About Script${NC}"
+echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo -e ""
 read -p " Select Menu :  "  opt
 echo -e ""
@@ -79,18 +75,26 @@ case $opt in
 1) clear ; vmess ;;
 2) clear ; vless ;;
 3) clear ; trojan ;;
-4) clear ; allxray ;;
-5) clear ; log-create ;;
-6) clear ; Backup ;;
-7) clear ; Restore ;;
-8) clear ; Retart ;;
+4) clear ; shadowsocks ;;
+5) clear ; shadowsocks2022 ;;
+6) clear ; socks ;;
+7) clear ; allxray ;;
+8) clear ; log-create ;;
 9) clear ; speedtest ;;
 10) clear ; dns ;;
 11) clear ; certxray ;;
-12) clear ; xraymod ;;
-13) clear ; xrayofficial ;;
-14) clear ; changer ;;
-15) clear ; Reboot ;;
+12) clear ; about ;;
+13) clear ; changer ;;
+14) clear ;
+resolvectl status
+echo ""
+echo ""
+read -n 1 -s -r -p "Press any key to back on menu"
+echo ""
+echo ""
+menu ;;
+15) clear ; xraymod ;;
+16) clear ; xrayofficial ;;
 x) exit ;;
-*) echo -e "salah input" ; sleep 0.5 ; menu ;;
+*) echo -e "${YB}salah input${NC}" ; sleep 1 ; menu ;;
 esac
